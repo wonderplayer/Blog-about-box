@@ -16,7 +16,7 @@ class LuckyController extends Controller
         $numbers = array();
 		for ($i=0; $i < $count; $i++){
 			$numbers[] = rand(0,100);
-			//iiiiiiii
+			echo "aaaaaa";
 		}
 		 $numbersList = implode(', ', $numbers);
         return new Response(
