@@ -17,7 +17,6 @@ class LuckyController extends Controller
 		for ($i=0; $i < $count; $i++){
 			$numbers[] = rand(0,100);
 		}
-		echo "testy";
 		 $numbersList = implode(', ', $numbers);
         return new Response(
             '<html><body>Lucky numbers: '.$numbersList.'</body></html>'
