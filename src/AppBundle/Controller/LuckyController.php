@@ -18,8 +18,9 @@ class LuckyController extends Controller
 			$numbers[] = rand(0,100);
 		}
 		 $numbersList = implode(', ', $numbers);
-        return new Response(
-            '<html><body>Lucky numbers: '.$numbersList.'</body></html>'
-        );
+         return $this->render(
+        'lucky/number.html.twig',
+        array('luckyNumberList' => $numbersList)
+    );
     }
 }
